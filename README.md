@@ -1,3 +1,6 @@
+## Project Overview
+This project was a web security project CSCI 1660: Introduction to Computer Systems Security course at Brown University. We were tasked with finding, documenting, and suggesting mitigations for a certain number of vulnerabilities in an insecure web portal for submitting assignments and recieving grades. The web portal was hosted locally via a Docker instance in order to allow us to reset the portal if changes from various exploits interfered with one another. I worked with PortSwigger's Burp Suite as well as analyzing various pages' DOM/js to find the four vulnerabilities documented below as well as in the `exploits.mp4` screen recording.
+
 ## Vulnerability 1: SQL Injection
 ### Discovery
 All input fields rely on client-side input sanitization to prevent characters such as `'`, `=`, etc. from appearing. Since client-side sanitization is easily disabled in the browser using the inspector tool (done in my video by simply having the `onSubmit` action of the form to be to `return true` instead of calling whatever validation function was being used), all input forms on the website are vulnerable to SQL injection.
