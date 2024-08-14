@@ -1,1 +1,3 @@
 # cs1660-flag
+## Project Overview
+This project was a web security project CSCI 1660: Introduction to Computer Systems Security course at Brown University. We were tasked with finding, documenting, and suggesting mitigations for a certain number of vulnerabilities in an insecure web portal for submitting assignments and recieving grades. The web portal was hosted locally via a Docker instance in order to allow us to reset the portal if changes from various exploits interfered with one another. I worked with PortSwigger's Burp Suite as well as analyzing various pages' DOM/js to find and document four vulnerabilities documented. Due to the course collaboration policy, the full repo cannot be made public. Code can be made available upon individual request.
